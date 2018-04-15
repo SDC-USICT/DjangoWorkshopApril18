@@ -1,0 +1,6 @@
+<form action="/ask/questions" method="post">
+  {% csrf_token %}
+  <input type="text" name="question" placeholder="Question!" />
+
+  <button type="submit">SUBMIT</button>
+</form>

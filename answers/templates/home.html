@@ -1,0 +1,14 @@
+<h1>StackUnderflow</h1>
+
+
+{% for question in qs %}
+    <div>  {{ question.text }}</div> <br>
+    <div>  {% for answer in answers %}
+              {% if answer.question_id.id == question.id %}
+               &nbsp; &nbsp;  {{ answer.text }} <br>
+
+              {% endif %}
+            {% endfor %}
+    </div>
+    &nbsp; &nbsp;  &nbsp; &nbsp;  <input type="text">
+{% endfor %}
